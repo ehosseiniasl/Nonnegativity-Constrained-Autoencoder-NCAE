@@ -10,13 +10,11 @@ numClasses = 10;
 hiddenSizeL1 = 196;    % Layer 1 Hidden Size
 hiddenSizeL2 = 20;    % Layer 2 Hidden Size
 sparsityParam = 0.05;   % desired average activation of the hidden units.
-                       % (This was denoted by the Greek alphabet rho, which looks like a lower-case "p",
-		               %  in the lecture notes). 
 lambda = 3e-3;         % weight decay parameter      
 beta = 3;              % weight of sparsity penalty term       
 
-inputZeroMaskedFraction   = 0.0;
-dropoutFraction   = 0.0;
+inputZeroMaskedFraction   = 0.0;  % denoising ratio
+dropoutFraction   = 0.0;          % dropout ratio
 
 %% Load data from the MNIST database
 
