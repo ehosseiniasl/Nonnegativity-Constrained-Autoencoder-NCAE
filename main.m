@@ -100,7 +100,7 @@ stack{2}.b = sae2OptTheta(2*hiddenSizeL2*hiddenSizeL1+1:2*hiddenSizeL2*hiddenSiz
 
 % Initialize the parameters for the deep model
 [stackparams, netconfig] = stack2params(stack);
-stackedAETheta{seed} = [ saeSoftmaxOptTheta ; stackparams ];
+stackedAETheta = [ saeSoftmaxOptTheta ; stackparams ];
 
 
 %% Check Gradient
